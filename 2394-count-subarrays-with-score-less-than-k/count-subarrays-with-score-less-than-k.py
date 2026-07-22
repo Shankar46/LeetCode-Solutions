@@ -5,7 +5,6 @@ class Solution:
         count = 0
         for right in range(len(nums)):
             windowSum += nums[right]
-
             while windowSum * (right - left + 1) >= k:
                 windowSum -= nums[left]
                 left += 1
